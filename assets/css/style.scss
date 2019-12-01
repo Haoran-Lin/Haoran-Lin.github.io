@@ -3,17 +3,13 @@
 
 @import "{{ site.theme }}";
 
-body {background-color:#b0c4de; color:red;}
+body {background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 44px;
+    opacity: 1;}
 h1 {color:#00ff00;}
 p{color:rgb(0,0,255);}
-nav {text-align:left;}
-/* Layout Properties */
-top:63px;
-left:323px;
-width:180px;
-height:60px;
-/* UI Properties */
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #707070;
-border-radius: 44px;
-opacity: 1;
+nav {text-align:left;top:63px;
+    left:323px;
+    width:180px;
+    height:60px;}
