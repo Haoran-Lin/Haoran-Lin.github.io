@@ -98,11 +98,23 @@
            
 	</Section>
 		<section id="Contact">
-		<div>
-		<h1>Contact Me</h1>
-		<hr>
-		<p class="p1"> E-mail Address: <a href="mailto:hr.edward.lin@gmail.com">hr.edward.lin@gmail.com</a></p>
-		</div>
+                {% for static in site.pages %}
+                    {% if static.id %}
+                        <div id="{{ static.id }}">
+                        {% if static.thumbnail %}
+                            <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
+                        {% endif %}
+                        <div id="contact">
+                            <h1>{{ Contact Me }}</h1>
+                            <hr>
+			<p class="p1"> E-mail Address: <a href="mailto:hr.edward.lin@gmail.com">hr.edward.lin@gmail.com</a></p>
+                        </div>
+
+                        {{ static.content }}
+                        </div>
+			
+                 {% endif %}
+                {% endfor %}
 	
 	</section>
 	</main>
