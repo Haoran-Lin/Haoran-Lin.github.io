@@ -27,12 +27,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	
+	<title>Haoran Lin's Portfolio</title>
+    <style>
+    .wrapper {width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;}
+    .floatclear{clear:left;}
+    </style>
 </head>
 
 <body>
-	<div id="header">
+	<div id="wrapper">
+		<div>
 		<nav>
-            {% for static in site.pages %}
+			<a class="button" href="#about">About Haoran</a>
+            <a class="button" href="#Portfolio">Portfolio</a>
+            <a class="button" href="#contact">Contact Me</a>
+            
+			{% for static in site.pages %}
                 {% if static.id %}
                     <li class="downloads"><a href="#{{ static.id }}">{{ static.title }}</a></li>
 
@@ -42,7 +55,7 @@
 		</nav>
 	</div><!-- end header -->
 
-	<div class="wrapper">
+	<div>
 
             <section>
                 <!-- then we are on the right post -->
