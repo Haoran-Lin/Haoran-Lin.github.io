@@ -3,14 +3,15 @@ margin-left: auto;
 margin-right: auto;
 background-color:#EAEAEA;}
 
-header{background-color: #eaeaea;}
+header{background-color: #CCCCFF;}
 
 h1{margin:0; padding: 10px;}
 
 nav{float: left;
 width: 90px;
 padding: 10px;
-color: burlywood;}
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;}
 
 main{margin-left: 100px;
 padding: 10px;
@@ -22,5 +23,8 @@ background-color: #CCCCFF;}
 
 nav ul{list-style-type: none;}
 nav a{text-decoration: none;}
+nav { position: fixed;}
+
+
 
 body {background-color:#EAEAEA;}
