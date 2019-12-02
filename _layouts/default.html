@@ -42,14 +42,9 @@
 		<div>
 		<nav>
             
-			{% for static in site.pages %}
-                {% if static.id %}
-                   <a class="button" href="#about">About Haoran</a>
+            <a class="button" href="#about">About Haoran</a>
             <a class="button" href="#Portfolio">Portfolio</a>
             <a class="button" href="#contact">Contact Me</a>
-
-                {% endif %}
-            {% endfor %}
 
 		</nav>
 	</div><!-- end header -->
@@ -98,23 +93,11 @@
            
 	</Section>
 		<section id="Contact">
-                {% for static in site.pages %}
-                    {% if static.id %}
-                        <div id="{{ static.id }}">
-                        {% if static.thumbnail %}
-                            <img src="{{ static.thumbnail }}" alt="{{ static.title }}" title="{{ static.title }}" />
-                        {% endif %}
                         <div id="contact">
                             <h1>{{ Contact Me }}</h1>
                             <hr>
 			<p class="p1"> E-mail Address: <a href="mailto:hr.edward.lin@gmail.com">hr.edward.lin@gmail.com</a></p>
                         </div>
-
-                        {{ static.content }}
-                        </div>
-			
-                 {% endif %}
-                {% endfor %}
 	
 	</section>
 	</main>
