@@ -55,9 +55,16 @@
 	</div><!-- end header -->
 
 	<div>
-
-            <section>
-                <!-- then we are on the right post -->
+<main>
+	<section id="about">  <!-- then we are on the right post -->
+		<div>
+		<h1>About me</h1>
+		</div>
+		<p class="p1"> Hi, I'm Haoran, a User Experience Designer, you can also call me Eddie. I'm currently studying at Wilfrid Laurier University, and I have been studying UX for 2 years. What really makes me want to become a UXer is the world around us, especially back home in China. There are a lot of things and design product in our lives that just doesn't make sense and feel strange to use. I want to improve some elements around us and make things feel more pleasant for users. UX is a very interesting field overall, I would encourage more students who wants to improve things around us to join our UX program.</p>
+		</Section>	
+           
+	<section id="Portfolio">
+              
                 {% if current.thumbnail %}
                     <img src="{{ current.thumbnail }}" alt="{{ current.title }}" title="{{ current.title }}" />
                 {% endif %}
@@ -68,8 +75,7 @@
 
                 {{ current.content }}
 
-            </section>
-            <section>
+            
                 {% for post in site.posts limit: 5 %}
                     {% if post.id == current.id %}
                         {% continue %}
@@ -89,8 +95,7 @@
                     </a>
 
                 {% endfor %}
-            </section>
-            <section>
+           
                 {% for static in site.pages %}
                     {% if static.id %}
                         <div id="{{ static.id }}">
@@ -110,6 +115,8 @@
             </section>
 
 	</div>
+		
+	<section id=
 	<script>
 		if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
