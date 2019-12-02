@@ -33,7 +33,7 @@
 		<nav>
             {% for static in site.pages %}
                 {% if static.id %}
-                    <li class="downloads"><a href="#{{ static.id }}">{{ static.title }}</a></li>
+                    <a href="#{{ static.id }}">{{ static.title }}</a></li>
 
                 {% endif %}
             {% endfor %}
