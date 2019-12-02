@@ -67,6 +67,8 @@
 		<div>
 			<br><h1>My Portfolio</h1></br>
 		</div>
+	<div>
+	</div>
               
                 {% if current.thumbnail %}
                     <img src="{{ current.thumbnail }}" alt="{{ current.title }}" title="{{ current.title }}" />
@@ -78,20 +80,25 @@
 
                 {{ current.content }}
 
-            
+            <div>
+	    </div>
+
                 {% for post in site.posts limit: 5 %}
                     {% if post.id == current.id %}
                         {% continue %}
                     {% endif %}
                     <a href="{{ post.url }}">
-                    <div>
+                    
+			    <div>
                     {% if post.thumbnail %}
                         <img src="{{ post.thumbnail }}" alt="{{ post.title }}" title="{{ post.title }}" />
                     {% endif %}
-                    <div id="title">
+                   
+				    <div id="title">
                         <h1>{{ post.title }}</h1>
                         <hr>
-                    </div>
+                    
+				    </div>
 
                     {{ post.content }}
                     </div>
