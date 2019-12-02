@@ -41,13 +41,12 @@
 	<div id="wrapper">
 		<div>
 		<nav>
-			<a class="button" href="#about">About Haoran</a>
-            <a class="button" href="#Portfolio">Portfolio</a>
-            <a class="button" href="#contact">Contact Me</a>
             
 			{% for static in site.pages %}
                 {% if static.id %}
-                    <li class="downloads"><a href="#{{ static.id }}">{{ static.title }}</a></li>
+                   <a class="button" href="#about">About Haoran</a>
+            <a class="button" href="#Portfolio">Portfolio</a>
+            <a class="button" href="#contact">Contact Me</a>
 
                 {% endif %}
             {% endfor %}
