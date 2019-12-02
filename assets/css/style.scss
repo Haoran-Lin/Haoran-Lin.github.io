@@ -6,9 +6,9 @@
 #wrapper{width:80%;
 margin-left: auto;
 margin-right: auto;
-background-color:#DFCFBE;}
+background-color:#000000;}
 
-header{background-color:#ffffff;
+header{background-color:#dfcfbe;
 color: #000000;text-align: center; font-size:xx-large;padding: 2px 5px 2px 30px;
 }
 
@@ -24,7 +24,8 @@ padding: 10px;
 background-color:#98b4d4;
 position:fixed;}
 
-main{margin-left:750px;
+main{
+text-align:center;
 padding: 10px;
 color:#000000;}
 
@@ -37,6 +38,9 @@ p{ position:center;text-align:justify;
     left:30px;
     font-family:Arial, sans-serif;
 font-size:medium}
+
+.p1{font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;}
 
 .p4{font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: .8em;
